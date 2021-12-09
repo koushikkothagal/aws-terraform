@@ -7,18 +7,6 @@ terraform {
   }
 }
 
-variable "app_tag_name" {
-  description = "Value of Name tag"
-  type        = string
-  default     = "app"
-}
-
-variable "app_port" {
-  description = "Value of application port"
-  type        = number
-  default     = 8080
-}
-
 provider "aws" {
   profile = "default"
   region  = "us-west-2"
